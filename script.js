@@ -1,7 +1,9 @@
 {
   const WRAPPER_CLASS = "viewPassword-1234-qwerty-password-wrapper";
+  const SHOW_CLASS = "viewPassword-1234-qwerty-password-show";
   const togglePassword = (field) => {
-    field.type = field.type === "password" ? "text" : "password";
+    const isPassword = !field.parentElement.classList.toggle(SHOW_CLASS);
+    field.type = isPassword ? "password" : "text";
   }
   
   const handleClickWrapper = (event, field) =>{
