@@ -1,0 +1,11 @@
+.viewPassword-1234-qwerty-password-wrapper{
+  /* display:contents; */ /* May change Element */
+  position: relative;
+}
+
+.viewPassword-1234-qwerty-password-wrapper::after{
+  content:"Pulsa aquí";
+  position:absolute;
+  top:0;
+  left: 100%;
+}
