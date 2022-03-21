@@ -5,10 +5,13 @@
  "manifest_version": 3,
  "content_scripts":[
   {
-   "matches":["https://*.*", "http://*.*"],
+   "matches":["https://*/*", "http://*/*"],
    "css":["style.css"],
    "js":["script.js"]
   }
  ],
- "web_accessible_resources":["eye.svg","eye-slash.svg"]
+ "web_accessible_resources":[{
+      "resources": ["eye.svg","eye-slash.svg"],
+      "matches": ["https://*/*", "http://*/*"]
+    }]
 }
