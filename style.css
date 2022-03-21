@@ -4,7 +4,7 @@
 }
 
 .viewPassword-1234-qwerty-password-wrapper::after{
-  content:"Pulsa aquí";
+  content:url('chrome-extension://__MSG_@@extension_id__/eye.png');;
   position:absolute;
   top:0;
   left: 100%;
