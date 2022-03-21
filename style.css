@@ -7,10 +7,13 @@
   content:url('chrome-extension://__MSG_@@extension_id__/eye_slash.svg');
   width: 25px;
   height: 25px;
-  position:absolute;
-  top:0;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
   left: 100%;
 }
+
 
 .viewPassword-1234-qwerty-password-wrapper.viewPassword-1234-qwerty-password-show::after{
   content:url('chrome-extension://__MSG_@@extension_id__/eye.svg');
