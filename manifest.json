@@ -1,0 +1,6 @@
+{
+ "name": "View Password",
+ "description": "Extension for creating 'eyes' to see password",
+ "version": "1.0",
+ "manifest_version": 3
+}
