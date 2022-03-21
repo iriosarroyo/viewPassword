@@ -9,5 +9,6 @@
    "css":["style.css"],
    "js":["script.js"]
   }
- ]
+ ],
+ "web_accessible_resources":["eye.svg","eye-slash.svg"]
 }
