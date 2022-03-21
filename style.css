@@ -4,7 +4,9 @@
 }
 
 .viewPassword-1234-qwerty-password-wrapper::after{
-  content:url('chrome-extension://__MSG_@@extension_id__/eye_slash.svg')
+  content:url('chrome-extension://__MSG_@@extension_id__/eye_slash.svg');
+  width: 25px;
+  height: 25px;
   position:absolute;
   top:0;
   left: 100%;
