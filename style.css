@@ -1,17 +1,22 @@
+.viewPassword-1234-qwerty-password-menu{
+  position: fixed;
+  right: 25px;
+  bottom: 25px;
+  border-radius: 25px;
+  border: 0.5px solid grey;
+  padding: 5px 10px;
+  display: grid;
+  grid-template-columns: max-content;
+}
+
 .viewPassword-1234-qwerty-password-wrapper{
-  /* display:contents; */ /* May change Element */
-  position: relative;
+  padding: 2px;
 }
 
 .viewPassword-1234-qwerty-password-wrapper::after{
   content:url('chrome-extension://__MSG_@@extension_id__/eye_slash.svg');
   width: 25px;
   height: 25px;
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  margin: auto;
-  left: 100%;
 }
 
 
