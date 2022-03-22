@@ -1,8 +1,10 @@
 {
+  const MENU_CLASS = "viewPassword-1234-qwerty-password-menu";
   const WRAPPER_CLASS = "viewPassword-1234-qwerty-password-wrapper";
   const SHOW_CLASS = "viewPassword-1234-qwerty-password-show";
   const togglePassword = (field) => {
-    const isPassword = !field.parentElement.classList.toggle(SHOW_CLASS);
+    const isPassword = !document.querySelector(`.${WRAPPER_CLASS}[data-id=${field.dataset.id}]`)
+      .classList.toggle(SHOW_CLASS);
     field.type = isPassword ? "password" : "text";
   }
   
@@ -10,12 +12,16 @@
     if(event.target.classList.contains(WRAPPER_CLASS)) togglePassword(field);
   }
   
-  const createEye = (field) =>{
+  const eyeMenu = document.createElement("div");
+  eyeMenu.classList.add(MENU_CLASS);
+  document.body.append(eyeMenu);
+  
+  const createEye = (field, idx) =>{
     const wrapper = document.createElement("div");
     wrapper.classList.add(WRAPPER_CLASS);
-    const parentElem = field.parentElement;
-    parentElem.append(wrapper);
-    wrapper.append(field);
+    eyeMenu.append(wrapper);
+    eyeMenu.dataset.id = idx;
+    field.dataset.id = idx;
     wrapper.addEventListener("click", (event) => handleClickWrapper(event, field));
   }
   
